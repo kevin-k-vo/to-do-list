@@ -1,0 +1,169 @@
+body {
+	font-family: Arial, Sans-Serif;
+	padding: 0px;
+	margin: 0px;
+	background-color: CornflowerBlue;
+}
+
+body p {
+	color: grey;
+}
+
+#container {
+	border-radius: 7px;
+	margin: 10px auto;
+	background-color: white;
+	width:600px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+#header {
+	padding-left: 25px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid rgba(0, 0, 0, .05);
+}
+
+
+#toprow p{
+	display:inline;
+	font-size: 25px;
+	color: CornflowerBlue;
+}
+
+#day {
+	font-weight: bold;
+}
+
+#bottomrow p{
+    display:inline-block;
+}
+
+#taskstodo {
+	float:right;
+	padding-right: 25px;
+}
+
+
+
+.task {
+	display: table;
+	width:100%;
+	border-bottom: 2px solid rgba(0, 0, 0, .05);	
+}
+
+.taskmarker {
+	width: 1%;
+    display: table-cell;
+	background-color: CornflowerBlue;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.25s linear;
+
+}
+
+.task:hover .taskmarker{
+	visibility: visible;
+	opacity: 1;
+}
+
+.done {
+	text-decoration: 3px line-through #ed7864;
+}
+
+.unedited {
+	font-style: italic;
+	color: lightgrey;
+}
+
+.tasktext {
+	width: 75%;
+    display: table-cell;
+	max-width: 75px;
+	overflow:hidden;
+	white-space: nowrap;
+}
+
+p:focus {
+	outline: none;
+}
+
+.tasktext p {
+	padding-left: 18px;
+}
+
+.taskactions {
+    display: table-cell;
+	text-align:center;
+}
+
+.task button, .task input {
+
+	height: 25px;
+	
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.25s linear;
+}
+
+.task button{
+	border: none;
+	background-color: #e7e7e7;
+	border-radius: 10px;
+	width: 60px;
+	outline: none;
+	color: white;
+	transition: background-color 0.25s linear;
+
+
+}
+
+.taskactions:hover button, .taskactions:hover input{
+	visibility: visible;
+	opacity: 1;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #ed7864;
+}
+
+.taskactions input{
+	position: relative;
+	top: 7px;
+}
+
+.add {
+	padding: 25px;
+	text-align: center;
+}
+
+#add{
+	height: 50px;
+	width: 50px;
+	font-weight: bold;
+	font-size: 25px;
+	border-radius: 50%;
+	border-style: none;
+	outline: none;
+	background-color: #e7e7e7;
+	color: white;
+
+
+}
+
+#add:hover{
+	cursor: pointer;
+	background-color: CornflowerBlue;
+	transition: background-color 0.25s linear;
+}
+
+button:active {
+	filter: brightness(90%);
+}
+
+#add:active{
+	filter: brightness(90%);
+}
+
+
